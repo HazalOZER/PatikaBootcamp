@@ -1,4 +1,4 @@
-# Değerlendirme yapacaklarlara açıklama
+# Değerlendirme yapacaklara açıklama
 - Classlar Cohort ders notlarını göre sıralı bir şekilde isimlendirilmiştir.
 - Sıra numarasından sonra başında P harfi bulunanlar bize verilen pratiklerdir.
 - Lütfen değerlendirme yapacağınız pratiğe gidiniz.
