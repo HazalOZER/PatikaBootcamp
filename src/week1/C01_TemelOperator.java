@@ -1,6 +1,6 @@
 package week1;
 
-public class C01TemelOperator {
+public class C01_TemelOperator {
 
     public static void main(String[] args) {
 
