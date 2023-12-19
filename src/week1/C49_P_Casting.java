@@ -50,5 +50,6 @@ public class C49_P_Casting {
         numFloat = (float) numDouble;
         System.out.println("Girdiğiniz ondalıklı sayının float türündeki değeri: " + numFloat);
 
+
     }
 }
