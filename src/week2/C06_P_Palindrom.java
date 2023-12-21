@@ -1,5 +1,7 @@
 package week2;
 
+import java.util.Scanner;
+
 public class C06_P_Palindrom {
     static boolean isPalindrom(int num) {
 
@@ -10,13 +12,18 @@ public class C06_P_Palindrom {
             reverseNum = reverseNum * 10 + lastNum;
             temp /= 10;
         }
-        if (reverseNum==num){
+        if (reverseNum == num) {
+            System.out.println(num+ " sayısı palindrom sayıdır.");
             return true;
         }
+        System.out.println(num+" sayısı palindrom sayı değildir");
         return false;
     }
 
     public static void main(String[] args) {
-        System.out.println(isPalindrom(4));
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Sayı :");
+        int num = scan.nextInt();
+        isPalindrom(num);
     }
 }
