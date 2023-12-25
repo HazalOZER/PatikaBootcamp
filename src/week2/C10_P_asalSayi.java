@@ -7,13 +7,17 @@ public class C10_P_asalSayi {
     static boolean isPrime(int num, int num2) {
 
 
-        if (num <= 0) {//Sayının pozitif olup olmadığı değerlendirilmesi yapıldı
+        if (num <= 1) {//Sayının birden büyük olup olmadığı değerlendirilmesi yapıldı
 
-            System.out.println("Asal sayılar sadece kendisine ve 1 sayısına kalansız bölünebilen 1'den büyük pozitif tam sayılardır. " +
-                    "\nNegatif sayılar asal sayı değildir.");//negatif sayı giren kullanıcı ekranına mesaj verildi
-            System.out.println(num + " sayısı asal bir sayı değildir.");//asal sayı olmadığı bilgisi verildi
+            System.out.println("Asal sayılar sadece kendisine ve 1 sayısına kalansız bölünebilen 1'den büyük pozitif tam sayılardır.");
+            if (num < 0) {
+
+                System.out.println("Negatif sayılar asal sayı değildir."); //negatif sayı giren kullanıcı ekranına mesaj verildi
+            }
+
+            System.out.println(num + " sayısı asal bir sayı değildir."); //asal sayı olmadığı bilgisi verildi
+
             return false;//yanlış değeri döndürüldü
-
         } else {
 
             if (num == 2) {//sayının 2 sayısına eşitliği değerlendirildi
@@ -35,6 +39,7 @@ public class C10_P_asalSayi {
 
             return isPrime(num, num2 + 1);//if bloklarına girene kadar bölen sayısını 1 arttıran recursive metot
         }
+
     }
 
     public static void main(String[] args) {
