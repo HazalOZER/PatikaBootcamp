@@ -15,7 +15,7 @@ public class C25_P_TekrarEdenCift {
 
     public static void main(String[] args) {
 
-        int[] arr = {3, 7,10, 3,20, 3, 2, 9,20, 10, 21, 1, 33, 9, 1};
+        int[] arr = {3, 7,10, 3, 20, 3, 2, 9,20, 10, 21, 1, 33, 9, 1};
 
         int[] dublicate = new int[arr.length];
         int startIndex = 0;
@@ -36,11 +36,7 @@ public class C25_P_TekrarEdenCift {
             }
         }
 
-        for (int i : dublicate) {
-            if (i % 2 == 0 && i != 0) {
-                System.out.println(i);
-            }
-        }
+
 
     }
 }
