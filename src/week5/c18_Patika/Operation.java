@@ -1,4 +1,4 @@
-package week5.Patika;
+package week5.c18_Patika;
 
 public interface Operation {
     void runMenu();

@@ -1,4 +1,4 @@
-package week5.Patika;
+package week5.c18_Patika;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -35,7 +35,9 @@ public class Notebook extends Product implements Operation {
                     "\n5- NoteBook listeleme" +
                     "\n0- Çıkış yap.");
             System.out.print("Lütfen yapmak istediğiniz işlemi seçiniz: ");
+
             int select = scan.nextInt();
+
             switch (select) {
                 case 0:
                     isRunning = false;
@@ -61,15 +63,33 @@ public class Notebook extends Product implements Operation {
 
     }
 
-    @Override
-    public void showProductList() {
+    static{
 
     }
 
     @Override
+    public void showProductList() {
+
+
+        System.out.println("| ID | Ürün Adı\t\t\t\t\t| Fiyat\t\t\t| Marka\t\t\t| Depolama \t\t\t| Ekran \t\t\t| RAM\t\t\t|");
+
+        System.out.println("-------------------------------------------------------------------------------------------------");
+
+        for (Notebook n:notebooks) {
+            System.out.println("| "+n.getId()+" | "+n.getName()+"\t\t\t\t\t| "+n.getPrice()+"\t\t\t | "+n.getBrandName()+"\t\t\t | "+n.getMemory()+" \t\t\t| "+n.getScreenSize()+"\t\t\t| "+n.getRam()+"\t\t\t|");
+        }
+
+        System.out.println("-------------------------------------------------------------------------------------------------");
+
+
+    }
+
+
+
+    @Override
     public void addProduct() {
 
-        notebooks.add(new Notebook(scan.nextLine()));
+        notebooks.add(new Notebook());
 
 
     }
